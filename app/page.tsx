@@ -5,18 +5,13 @@ import TestimonialCarousel from "@/components/TestimonialCarousel";
 import HowToUse from "@/components/HowToUse";
 import ResultsTestimonials from "@/components/ResultsTestimonials";
 import HeroVideo from "@/components/HeroSection";
-import TrustBar from "@/components/TrustBar";
-import ProblemSection from "@/components/ProblemSection";
-import ProductShowcase from "@/components/ProductShowcase";
 import BenefitsGrid from "@/components/BenefitsGrid";
-import BeforeAfter from "@/components/BeforeAfter";
-import HowItWorks from "@/components/HowItWorks";
 import FAQ from "@/components/FAQSection";
-import CTASection from "@/components/CTASection";
-import StickyMobileCTA from "@/components/StickyMobileCTA";
+import StickyMobileCTA from "@/components/BackToTop";
 import HeroSection from "@/components/HeroSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 
 export const dynamic = "force-static";
@@ -34,6 +29,8 @@ export default function Page() {
       <ResultsTestimonials />
       <FAQSection />
       <Footer />
+      <BackToTop />
+     { /*<StickyMobileCTA />*/}
      { /*
       <TrustBar />
       <ProblemSection />

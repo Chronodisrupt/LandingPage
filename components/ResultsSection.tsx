@@ -2,20 +2,29 @@
 
 export default function ResultsSection() {
   return (
-    <section className="py-24" style={{ background: "linear-gradient(to bottom, #F5F7F6, #E7F5EC)" }}>
+    <section
+      className="py-24"
+      style={{ background: "linear-gradient(to bottom, #F5F7F6, #E7F5EC)" }}
+    >
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Top Row - Headline + Image */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
 
-          {/* Headline LEFT */}
+          {/* Text LEFT */}
           <div>
-            <h2 className="text-4xl font-bold text-gray-800 mb-4 text-justify md:text-left">
-              Designed for Joint & Muscle Comfort. Our DMSO cream for joint & muscle areas is crafted for daily topical routines, supporting comfort in commonly active areas such as knees, shoulders, neck, and muscles.
+            <h2 className="text-4xl font-bold text-gray-800 mb-4 md:text-left">
+              Designed for Joint & Muscle Comfort
             </h2>
+
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Our DMSO cream is crafted for daily topical routines, helping
+              support comfort in commonly active areas such as knees,
+              shoulders, neck, and muscles.
+            </p>
           </div>
 
-          {/* New Image RIGHT */}
+          {/* Image RIGHT */}
           <div className="flex justify-center md:justify-end">
             <img
               src="/images/Vigority.jpg"
@@ -27,7 +36,7 @@ export default function ResultsSection() {
         </div>
 
         {/* Existing Image Cards */}
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-10 mb-16">
 
           <ImageCard
             image="/images/result1.jpg"
@@ -39,6 +48,15 @@ export default function ResultsSection() {
             label="Neck & Shoulder Tension"
           />
 
+        </div>
+
+        {/* NEW IMAGE BELOW */}
+        <div className="flex justify-center">
+          <img
+            src="/images/3xdaily.jpg"
+            alt="Muscle Recovery"
+            className="w-full max-w-xl rounded-xl shadow-lg object-cover"
+          />
         </div>
 
       </div>
@@ -58,7 +76,7 @@ function ImageCard({
       <img
         src={image}
         alt={label}
-        className="w-full h-auto object-cover"
+        className="w-full h-64 object-cover"
       />
       <div className="p-4 text-center text-gray-700 font-semibold">
         {label}

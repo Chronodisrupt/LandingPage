@@ -28,5 +28,5 @@ export default function BackToTop() {
     <button className="backToTop" onClick={scrollTop}>
       <ArrowUp size={22} color="whitesmoke" strokeWidth={2.5} />
     </button>
-  );
+  ); 
 }

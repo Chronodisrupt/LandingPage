@@ -1,86 +1,76 @@
 "use client";
 
-import { useState } from "react";
-
-const testimonials = [
-  {
-    name: "Daniel R.",
-    text: "I’ve struggled with joint stiffness for years. After using Vigority DMSO Cream for just a few days, my knees and shoulders feel so much better. It absorbs quickly and isn’t greasy at all.",
-  },
-  {
-    name: "Michelle T.",
-    text: "After long workdays, my back and shoulders ache badly. This cream gives relief within minutes. It’s become part of my nightly routine.",
-  },
-  {
-    name: "Jason M.",
-    text: "I use this after workouts, and my muscles recover faster. Lightweight, fast-absorbing, and it really works better than anything else I’ve tried.",
-  },
-  {
-    name: "Linda K.",
-    text: "My hands and joints used to feel stiff every morning. Now, after a week of daily use, I feel much more comfortable and active.",
-  },
-  {
-    name: "Robert T.",
-    text: "I finally found a cream that actually helps. My shoulders, neck, and knees feel supported without any sticky residue.",
-  },
-];
-
-export default function TestimonialCarousel() {
-  const [index, setIndex] = useState(0);
-
-  const next = () => {
-    setIndex((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prev = () => {
-    setIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
-  };
-
-  const review = testimonials[index];
-
+export default function FactsSection() {
   return (
     <section
-      className="py-20"
-      style={{ background: "linear-gradient(to bottom, #E7F5EC, #9fdbb4)" }}
+      className="py-24"
+      style={{ background: "linear-gradient(to bottom, #E7F5EC,rgb(187, 235, 204))" }}
     >
-      <div className="max-w-4xl mx-auto px-6 text-center relative">
+      <div className="max-w-6xl mx-auto px-6">
 
         {/* Title */}
-        <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
-          Real Customer Results
-        </h3>
-
-        {/* Review Card */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 transition-all duration-300">
-
-          <div className="text-green-500 text-2xl mb-4">
-            ★★★★★
-          </div>
-
-          <p className="text-gray-700 text-base md:text-lg mb-6 leading-relaxed">
-            {review.text}
+        <div className="text-center mb-16">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Facts About Vigority DMSO Cream
+          </h3>
+          <p className="text-gray-700 max-w-2xl mx-auto text-lg">
+            Designed for daily comfort and active lifestyles. Discover how
+            Vigority DMSO Cream supports joints, muscles, and everyday mobility.
           </p>
-
-          <p className="font-semibold text-gray-900 text-lg">
-            {review.name}
-          </p>
-
         </div>
 
-        {/* Navigation Buttons */}
-        <button
-          onClick={prev}
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-100 transition"
-        >
-          ‹
-        </button>
+        {/* Premium Image Layout */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
 
-        <button
-          onClick={next}
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-100 transition"
-        >
-          ›
-        </button>
+          {/* Image 1 */}
+          <div className="md:mt-16">
+            <img
+              src="/images/fact1.jpg"
+              alt="Fast Absorption"
+              className="rounded-2xl shadow-xl w-full object-cover"
+            />
+            <p className="mt-4 text-gray-800 font-medium text-lg text-center">
+              Comfort for active & daily living.
+            </p>
+          </div>
+
+          {/* Image 2 */}
+          <div className="md:mt-16">
+            <img
+              src="/images/fact2.png"
+              alt="Joint Support"
+              className="rounded-2xl shadow-xl w-full object-cover"
+            />
+            <p className="mt-4 text-gray-800 font-medium text-lg text-center">
+              Non-Gresy Fast-Absorbent.
+            </p>
+          </div>
+
+          {/* Image 3 */}
+          <div className="md:mt-16">
+            <img
+              src="/images/fact3.png"
+              alt="Muscle Recovery"
+              className="rounded-2xl shadow-xl w-full object-cover"
+            />
+            <p className="mt-4 text-gray-800 font-medium text-lg text-center">
+              Natural Blend
+            </p>
+          </div>
+
+          {/* Image 4 */}
+          <div className="md:mt-16">
+            <img
+              src="/images/fact4.png"
+              alt="Daily Routine"
+              className="rounded-2xl shadow-xl w-full object-cover"
+            />
+            <p className="mt-4 text-gray-800 font-medium text-lg text-center">
+              Advanced DMSO Formula
+            </p>
+          </div>
+
+        </div>
 
       </div>
     </section>

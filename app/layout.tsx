@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Hermon Ringworm Treatment",
+  title: "Vigority DMSO Cream",
   description:
-    "Fast acting antifungal treatment kit designed to eliminate stubborn ringworm and fungal infections.",
+    "Topical Joint, Muscle Comfort - Fast Absorption, Non-Greasy, Natural Blend. Support your active lifestyle with Vigority DMSO Cream.",
 };
 
 export default function RootLayout({

@@ -12,6 +12,7 @@ import HeroSection from "@/components/HeroSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import VideoSection from "@/components/VideoSection";
 
 
 export const dynamic = "force-static";
@@ -22,6 +23,7 @@ export default function Page() {
       <Header />  
       <PromoBanner />
       <HeroSection />
+      <VideoSection />
       <ResultsSection />
       <TestimonialCarousel />
       <HowToUse />

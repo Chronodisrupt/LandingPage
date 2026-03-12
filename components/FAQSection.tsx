@@ -73,7 +73,7 @@ export default function FAQSection() {
         {/* CTA */}
         <div className="mt-10 text-center">
           <a
-            href="#buy"
+            href="https://www.amazon.com/dp/B0GHTGK83T"
             className="bg-brand text-white px-8 py-3 rounded-lg font-semibold"
           >
             Get Treatment Kit

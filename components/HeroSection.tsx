@@ -45,7 +45,7 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4">
 
             <a
-              href="#buy"
+              href="https://www.amazon.com/dp/B0GHTGK83T"
               className="bg-brand text-white px-8 py-4 rounded-lg font-semibold text-center hover:opacity-90 transition"
             >
               Get Treatment Kit

@@ -6,7 +6,8 @@ export default function VideoSection() {
   const [play, setPlay] = useState(false);
 
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-24" 
+    style={{ background: "linear-gradient(to bottom,rgb(247, 252, 249),rgb(187, 235, 204))" }}>
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
         {/* LEFT SIDE - TEXT */}
@@ -47,11 +48,11 @@ export default function VideoSection() {
         {/* RIGHT SIDE - VIDEO */}
         <div className="relative">
 
-          <div className="aspect-video rounded-2xl overflow-hidden shadow-xl relative bg-black">
+          <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl relative bg-black">
 
             {!play ? (
               <div
-                className="relative cursor-pointer group"
+                className="relative w-full h-full cursor-pointer group"
                 onClick={() => setPlay(true)}
               >
                 <img
@@ -60,19 +61,36 @@ export default function VideoSection() {
                   className="w-full h-full object-cover"
                 />
 
-                {/* Play Button */}
+                {/* Centered Play Button */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-white/90 backdrop-blur-md rounded-full p-5 shadow-lg group-hover:scale-110 transition">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="black"
-                      viewBox="0 0 24 24"
-                      className="w-8 h-8 ml-1"
-                    >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
+
+                  <div className="relative flex items-center justify-center">
+
+                    {/* Glow */}
+                    <div className="absolute w-24 h-24 bg-green-400/30 rounded-full blur-2xl"></div>
+
+                    {/* Button */}
+                    <div className="relative flex items-center justify-center w-20 h-20 rounded-full
+                      bg-gradient-to-br from-green-500 to-green-700
+                      shadow-xl
+                      transition-transform duration-300
+                      group-hover:scale-110">
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="white"
+                        viewBox="0 0 24 24"
+                        className="w-8 h-8 ml-1"
+                      >
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+
+                    </div>
+
                   </div>
+
                 </div>
+
               </div>
             ) : (
               <video

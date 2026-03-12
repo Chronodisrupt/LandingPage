@@ -73,7 +73,7 @@ export default function FAQSection() {
         {/* CTA */}
         <div className="mt-10 text-center">
           <a
-            href="https://www.amazon.com/dp/B0GHTGK83T"
+            href="https://vigority.com/products/dmso-cream?_pos=1&_psq=DMSO&_ss=e&_v=1.0"
             className="bg-brand text-white px-8 py-3 rounded-lg font-semibold"
           >
             Get Treatment Kit

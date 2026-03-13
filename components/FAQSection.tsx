@@ -33,7 +33,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-gray-50 py-20">
+    <section id="faq" className="bg-gray-50 py-20">
       <div className="max-w-3xl mx-auto px-6">
 
         {/* Header */}

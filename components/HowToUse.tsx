@@ -2,7 +2,7 @@
 
 export default function HowToUse() {
   return (
-    <section className="bg-gray-50 py-24">
+    <section id="how-to-use" className="bg-gray-50 py-24">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Title */}

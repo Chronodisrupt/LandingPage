@@ -29,7 +29,7 @@ export default function ResultsTestimonials() {
   ];
 
   return (
-    <section className="py-28 bg-gradient-to-b from-[#E7F5EC] to-[#EDF5F0]">
+    <section id="reviews" className="py-28 bg-gradient-to-b from-[#E7F5EC] to-[#EDF5F0]">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}

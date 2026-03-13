@@ -29,7 +29,7 @@ export default function PromoBanner() {
   const seconds = Math.floor((timeLeft / 1000) % 60);
 
   return (
-    <section className="w-full bg-brand py-4">
+    <section id="promo-banner" className="w-full bg-brand py-4">
 
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
 

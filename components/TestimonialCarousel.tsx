@@ -2,7 +2,7 @@
 
 export default function FactsSection() {
   return (
-    <section
+    <section id="testimonial-carousel"
       className="py-24"
       style={{ background: "linear-gradient(to bottom, #E7F5EC,rgb(187, 235, 204))" }}
     >

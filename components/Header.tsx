@@ -21,22 +21,23 @@ export default function Header() {
 
         {/* LOGO */}
         <div className="flex items-center justify-center md:justify-start flex-1 md:flex-none">
-          <Image
+
+          <a href="#promo-banner">          <Image
             src="/images/logo.jpg"
             alt="Vigority"
             width={120}
             height={40}
             className="h-8 w-auto"
-          />
+          /></a>
         </div>
 
         {/* DESKTOP NAV */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
-          <a href="#" className="hover:text-gray-900">Shipping Policy</a>
-          <a href="#" className="hover:text-gray-900">Return Policy</a>
-          <a href="#" className="hover:text-gray-900">How to Use</a>
-          <a href="#" className="hover:text-gray-900">Reviews</a>
-          <a href="#" className="hover:text-gray-900">Contact Us</a>
+          <a href="#hero-section" className="hover:text-gray-900">Home</a>
+          <a href="#testimonial-carousel" className="hover:text-gray-900">About</a>
+          <a href="#how-to-use" className="hover:text-gray-900">How to Use</a>
+          <a href="#reviews" className="hover:text-gray-900">Reviews</a>
+          <a href="#faq" className="hover:text-gray-900">FAQ</a>
         </nav>
 
         {/* RIGHT ACTIONS */}
@@ -44,7 +45,7 @@ export default function Header() {
 
           {/* CTA Desktop Only */}
           <button className="hidden lg:inline-flex border border-brand px-4 py-2 rounded-lg text-sm font-semibold text-brand hover:bg-brand hover:text-white transition">
-            Sample Trial Kit
+            <a href="https://vigority.com/products/dmso-cream?_pos=1&_psq=DMSO&_ss=e&_v=1.0">Sample Trial Kit</a>
           </button>
 
           <Search size={20} className="cursor-pointer text-gray-700 hover:text-black" />

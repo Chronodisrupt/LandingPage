@@ -18,6 +18,9 @@
   --color-brandLight: var(--brand-light);
   --color-brandSoft: var(--brand-soft);
 }
+html {
+  scroll-behavior: auto;
+}
 
 body {
   background: var(--background);

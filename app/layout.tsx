@@ -1,4 +1,5 @@
 import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata = {
   title: "Vigority DMSO Cream",

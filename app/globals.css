@@ -19,7 +19,7 @@
   --color-brandSoft: var(--brand-soft);
 }
 html {
-  scroll-behavior: auto;
+  scroll-behavior: auto !important;
 }
 
 body {

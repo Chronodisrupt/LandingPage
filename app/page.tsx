@@ -15,12 +15,12 @@ import BackToTop from "@/components/BackToTop";
 import VideoSection from "@/components/VideoSection";
 import SmoothScroll from "@/components/SmoothScroll";
 
-
 export const dynamic = "force-static";
 
 export default function Page() {
   return (
     <>
+    <SmoothScroll />
       <Header />  
       <PromoBanner />
       <HeroSection />
@@ -33,7 +33,6 @@ export default function Page() {
       <FAQSection />
       <Footer />
       <BackToTop />
-      <SmoothScroll />
     </>
   );
 }

@@ -65,12 +65,11 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden border-t bg-white/30 backdrop-blur-md">
           <nav className="flex flex-col px-6 py-4 gap-4 text-gray-700 font-medium">
+            <a onClick={() => handleScrollTo("hero-section")} className="hover:text-black cursor-pointer">Home</a>
             <a onClick={() => handleScrollTo("testimonial-carousel")} className="hover:text-black cursor-pointer">About</a>
-            <a onClick={() => handleScrollTo("shipping-policy")} className="hover:text-black cursor-pointer">Shipping Policy</a>
-            <a onClick={() => handleScrollTo("return-policy")} className="hover:text-black cursor-pointer">Return Policy</a>
             <a onClick={() => handleScrollTo("how-to-use")} className="hover:text-black cursor-pointer">How to Use</a>
             <a onClick={() => handleScrollTo("reviews")} className="hover:text-black cursor-pointer">Reviews</a>
-            <a onClick={() => handleScrollTo("contact-us")} className="hover:text-black cursor-pointer">Contact Us</a>
+            <a onClick={() => handleScrollTo("faq")} className="hover:text-black cursor-pointer">FAQ</a>
           </nav>
         </div>
       )}
